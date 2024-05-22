@@ -1,3 +1,28 @@
+header {
+
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+/* Main Content */
+main {
+    background-color: black;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(assets/css/images/pexels-katlovessteve-551628.jpg) no-repeat center center/cover;
+    position: relative;
+}
+
+
+footer {
+
 }
