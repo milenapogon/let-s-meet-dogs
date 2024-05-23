@@ -1,7 +1,7 @@
 
 /* Header */
 header {
-    background-color: white;
+    background-color: white
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    
 }
 header a {
     text-decoration: none;
@@ -19,8 +20,12 @@ header a {
 
 /* Body */
 body {
-    background-image: url("../images/joe-caione-qO-PIF84Vxg-unsplash.jpg");
-
+    background-image: url('https://images.unsplash.com/photo-1621878135994-8b56a55d4af5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFsdGVzZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    
 }
 
 /* Main Content */
