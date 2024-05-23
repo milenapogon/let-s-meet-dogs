@@ -1,10 +1,27 @@
-header {
 
+/* Header */
+header {
+    background-color: black;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 110%;
+    box-shadow: 0 2px 2px:  whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+#menu {
+    display: flex
+}
+
+
 body {
-    background-image: url(/workspace/let-s-meet-dogs/assets/css/images/pexels-katlovessteve-551628.jpg) no-repeat center center/cover;
-    
-}
+    background-image: url(
 
 /* Main Content */
 main {
@@ -16,14 +33,20 @@ main {
     display: flex;
     flex-direction: column;
 }
-/* Hero section */
-#hero {
-    height: 600px;
-    width: 100%;
-    position: relative;
-}
 
 
-footer {
+/* Footer */
 
-}
+#social-networks {
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin-top: auto
+    }
+#social-networks i {
+        font-size: 160%;
+        padding: 5%;
+        color:#3a3a3a;
+    }
