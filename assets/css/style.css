@@ -1,12 +1,12 @@
 
 /* Header */
 header {
-    background-color: black;
+    background-color: white;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 110%;
-    box-shadow: 0 2px 2px:  whitesmoke;
+    box-shadow: 2px 2px 2px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -15,17 +15,17 @@ header a {
     text-decoration: none;
     color: inherit;
 }
-#menu {
-    display: flex
-}
 
 
+/* Body */
 body {
-    background-image: url(
+    background-image: url("../images/joe-caione-qO-PIF84Vxg-unsplash.jpg");
+
+}
 
 /* Main Content */
 main {
-    
+    background-color: white;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
