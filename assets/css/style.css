@@ -2,11 +2,12 @@ header {
 
 }
 body {
+    background-image: url(assets/css/images/pexels-katlovessteve-551628.jpg) no-repeat center center/cover;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Main Content */
 main {
-    background-color: black;
+    
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -18,7 +19,6 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url(assets/css/images/pexels-katlovessteve-551628.jpg) no-repeat center center/cover;
     position: relative;
 }
 
