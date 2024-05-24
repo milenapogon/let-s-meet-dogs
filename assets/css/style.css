@@ -1,12 +1,10 @@
 
 /* Header */
 header {
-    background-color: white
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 110%;
-    box-shadow: 2px 2px 2px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    box-shadow: 0;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -24,13 +22,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    
+
     
 }
 
 /* Main Content */
 main {
-    background-color: white;
+    color: white;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -39,10 +37,23 @@ main {
     flex-direction: column;
 }
 
+ #cover-text {
+    border: 2px solid black;
+    border-radius: 50%;
+    background:rgba(0, 0, 0, 0.562);
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    
+ 
+   
+  
 
+}
 /* Footer */
-
 #social-networks {
+        background-color: black;
         text-align: center;
         padding: 20px 0;
         display: flex;
@@ -53,5 +64,5 @@ main {
 #social-networks i {
         font-size: 160%;
         padding: 5%;
-        color:#3a3a3a;
+        color: white;
     }
