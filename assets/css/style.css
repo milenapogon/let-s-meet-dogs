@@ -18,13 +18,37 @@ header a {
 
 /* Body */
 body {
+}
+
+#hero {
     background-image: url('https://images.unsplash.com/photo-1621878135994-8b56a55d4af5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFsdGVzZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-
-    
+    background-position: relative;
 }
+ .circle {
+    width: 400px;
+    height: 400px;
+    margin: 10% auto;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.712);
+}     
+.content {
+    position: top left;
+    width: inherit;
+    height: auto;
+    top: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+
+}
+
 
 /* Main Content */
 main {
@@ -37,20 +61,12 @@ main {
     flex-direction: column;
 }
 
- #cover-text {
-    border: 2px solid black;
-    border-radius: 50%;
-    background:rgba(0, 0, 0, 0.562);
-    color: white;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    
+
  
    
   
 
-}
+
 /* Footer */
 #social-networks {
         background-color: black;
