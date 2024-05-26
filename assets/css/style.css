@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+  }
 
 /* Header */
-header {
+.header {
+    padding: 80px;
     background-color: black;
     color: white;
     width: 100%;
@@ -10,38 +14,71 @@ header {
     align-items: baseline;
     
 }
-header a {
-    text-decoration: none;
-    color: white;
-}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333; 
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right; 
+  }
+  
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+  }
+  /* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px;
+  }
+  .main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+  }
+  
+  
 
 
 /* Body */
-
-
-#hero {
-    background-image: url('https://images.unsplash.com/photo-1621878135994-8b56a55d4af5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFsdGVzZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: cover;
+body, html {
+    height: 100%;
 }
- .circle {
-    width: 250px;
-    height: 250px;
-    margin: 10% auto;
-    border-radius: 50%;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.712);
-    margin-top: 1px;
-    padding: 10px;
+
+
+.hero-image {
     
-}     
-.content {
-    position: relative;
-    width: inherit;
-    height: auto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url("istockphoto-1208558226-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+
+}
+  
+.hero-text {
+    position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -63,6 +100,20 @@ main {
     flex-direction: column;
 }
 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
 /* Footer */
 #social-networks {
         background-color: black;
